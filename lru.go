@@ -63,8 +63,6 @@ func (c *Cache) Size() int {
 	return len(c.entries)
 }
 
-// Used to test internal validity of the cache's linked list. Useful in debugging implementation changes.
-
 func (c *Cache) String() string {
 	if c.head == nil {
 		return fmt.Sprint(c.head)
